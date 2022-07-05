@@ -9,6 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - uses: ruby/setup-ruby@v1.111.0
+    - run: ruby -e 'File.write("_posts/2022-07-05-day.md", "---\nlayout: post\ntitle: 2022/07/06\npermalink: \"20220706\"\ntags: test\n---\ntest\n")'
+
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
     - uses: actions/cache@v2
       with:
