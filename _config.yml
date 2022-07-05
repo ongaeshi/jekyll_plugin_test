@@ -1,0 +1,22 @@
+# Setup
+title:               "ongaeshi"
+tagline:             "day"
+description:         'Twitter <a href="https://twitter.com/ongaeshi" target="_blank">@ongaeshi</a>. GitHub <a href="https://github.com/ongaeshi/day_ongaeshi">day_ongaeshi</a>.'
+url:                 https://ongaeshi.github.io
+baseurl:             '/day_ongaeshi'
+paginate:            30
+permalink:           pretty
+
+# About/contact
+author:
+  name:              ongaeshi
+  url:               https://ongaeshi.me
+  email:             ongaeshi0621@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y
