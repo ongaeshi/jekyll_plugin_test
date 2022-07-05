@@ -1,7 +1,6 @@
 module Jekyll
 	class HelloWorldPage < Page
 		def initialize(site, base, dir)
-      p site, base, dir
 			@site, @base, @dir = site, base, dir
 			@name = 'helloworld.html'
 
