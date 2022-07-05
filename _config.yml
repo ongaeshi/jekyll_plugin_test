@@ -3,7 +3,7 @@ title:               "ongaeshi"
 tagline:             "day"
 description:         'Twitter <a href="https://twitter.com/ongaeshi" target="_blank">@ongaeshi</a>. GitHub <a href="https://github.com/ongaeshi/day_ongaeshi">day_ongaeshi</a>.'
 url:                 https://ongaeshi.github.io
-baseurl:             '/day_ongaeshi'
+baseurl:             ''
 paginate:            30
 permalink:           pretty
 
