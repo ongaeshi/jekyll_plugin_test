@@ -19,7 +19,7 @@ layout: post
 title: #{title}
 permalink: "#{date.strftime('%Y%m%d')}"
 ---
-#{content}
+#{content.chomp}
       EOS
     )
   end
