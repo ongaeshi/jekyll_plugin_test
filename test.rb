@@ -9,6 +9,20 @@ class Post
     @title = title || date
     @content = content
   end
+
+  def write_to_dir(dir)
+    File.write(
+      File.join(dir, "#{date}-day.md"),
+      <<-EOS
+---
+layout: post
+title: #{title}
+permalink: "#{date.strftime('%Y%m%d')}"
+---
+#{content}
+      EOS
+    )
+  end
 end
 
 def main
@@ -25,7 +39,7 @@ def main
   #   "---\nlayout: post\ntitle: 2022/07/06\npermalink: \"20220706\"\n---\ntest\n"
   #   )
   posts.each do |post|
-    puts "---\n# #{post.title} #{post.date}\n#{post.content}"
+    post.write_to_dir("_posts")
   end
 end
 
