@@ -1,13 +1,13 @@
-
+require "date"
 require "find"
 
 class Post
   attr_reader :date, :title, :content
   
   def initialize(date, title, content)
-    @date = date # TODO: Dateにパース
-    @title = title  # TODO: nilだったらdateに変更
-    @content= content
+    @date = Date.parse(date)
+    @title = title || date
+    @content = content
   end
 end
 
