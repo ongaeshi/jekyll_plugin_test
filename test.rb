@@ -1,4 +1,5 @@
 require "date"
+require "fileutils"
 require "find"
 
 class Post
@@ -26,6 +27,8 @@ permalink: "#{date.strftime('%Y%m%d')}"
 end
 
 def main
+  FileUtils.mkdir_p("_posts")
+
   files = search_files
 
   posts = []
