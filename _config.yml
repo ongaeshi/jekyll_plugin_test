@@ -6,6 +6,7 @@ url:                 https://ongaeshi.github.io
 baseurl:             '/jekyll_plugin_test'
 paginate:            30
 permalink:           pretty
+timezone:            Asia/Tokyo
 
 # About/contact
 author:
