@@ -1,0 +1,1 @@
+@ongaeshi's short blog.
